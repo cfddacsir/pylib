@@ -12,7 +12,6 @@ Created on Tue Oct  8 09:47:01 2024
 #------------------------------------------------------------------------------
 ####  Import Packages
 #import lib_tcpro as tcpro ;
-#import lib_wiskdac as wisk ;
 #import lib_getfiles as getfiles ;
 #import tcpro_tempstat as tempstat;
 #import showmaxia as showmaxia  ;
@@ -541,7 +540,7 @@ def getfilesbe ( inppath, begkw=None, endkw='.csv', PSH=[0, 0 ] ):
         *default is [0, 0 ].
 
     '''
-    ### from: eslib_getfiles.py as getfiles.wisk.getfilebegins
+    ### from: eslib_getfiles.py as 
     FILESETPATHS = [];
     if PSH[1] : print(f' inppath = {inppath}');
     for f in listdir(inppath):

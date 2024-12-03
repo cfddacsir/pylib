@@ -7,7 +7,7 @@
 #   lib_getfiles.py
 #-----------------------------------------------------------------------------
     Library of Functions for processing data 
-    @author: Daniel.Collins <Daniel.Collins@Wisk.Aero>
+    @author: Daniel.Collins <Daniel.Collins@>
     Revised: 2023-09-29-T15:27-0700
 
     Created: Mo Apr 18 2022 1556 T

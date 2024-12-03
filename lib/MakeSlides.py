@@ -9,11 +9,10 @@ Created on Wed Aug  7 15:06:54 2024
 ## -*- coding: utf-8-*g
 __doc__='''
 #==============================================================================
-# lib_wiskdac.py
+# MakeSlides.py
 @ last: 2024-03-16-2011z
-@ author: Daniel.Collins <Daniel.Collins@wisk.aero >
-# library of python tools shared for Wisk applications
-#Python ; #wisk; #Daniel.COllins; #makeSlides
+@ author: Daniel.Collins <Daniel.Collins@ >
+#Python ; #Daniel.Collins; #makeSlides
 #------------------------------------------------------------------------------'''
 ###############################################################################
 PSH =[0 for i in range(0,100)] ; ## PSH[1]  = 0 ;
@@ -25,7 +24,6 @@ PATH_SLIDEMASTER = r'/Users/dac/pylab/lib/';
 #------------------------------------------------------------------------------
 ####  Import Packages
 # import lib_tcpro as tcpro ;
-# import lib_wiskdac as wisk ;
 # import lib_getfiles as getfiles ;
 # import tcpro_tempstat as tempstat;
 # import showmaxia as showmaxia  ;
@@ -66,7 +64,6 @@ def getfilesbe ( inppath, begkw='', endkw='.csv', PSH=[0, 0 ] ):
         *default is [0, 0 ].
 
     '''
-    ### from: eslib_getfiles.py as getfiles.wisk.getfilebegins
     FILESETPATHS = [];
     if PSH[1] : print(f' inppath = {inppath}');
     for f in listdir(inppath):
@@ -222,8 +219,6 @@ SLIDENAMES =\
     print( "inppath : {}".format(inppath));
     FSS = os.sep;
     SLIDENAMES = [];
-#    if PPTXPATH==None:  PPTXPATH  = r"G:\My Drivve\mylab\lib\Wisk\\" ;    
-#    if PPTXFILE==None:  PPTXFILE  = "WISK.pptx" ;
     PPTMASTER = PPTXPATH + FSS +  PPTXFILE ; 
     print( '\n    pptx slide master: {} \n'.format(PPTMASTER))
     #_save_ppt = inppath + FSS ; 
